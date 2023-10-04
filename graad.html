@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      let getal=prompt('geef het aantal punten met 2 getallen...');
+      if(getal==null){
+        document.write(`u heeft geannulleerd.`);
+      }
+      else if(getal.length==0){
+        document.write(`u heeft niets ingegeven.`);
+      }
+      else if(isNaN(getal)){
+        document.write(`Dit is geen nummer.`);
+      }
+      else if(getal>100){
+        document.write(`Geef de punten in met 2 cijfers!`);
+      }
+      else if (getal>=95){
+        document.write(`De graad is: A+`);
+      }
+      else if (getal>=90){
+        document.write(`De graad is: A`);
+      }
+      else if (getal>=80){
+        document.write(`De graad is: B`);
+      }
+      else if (getal>=70){
+        document.write(`De graad is: C`);
+      }
+      else if (getal>=60){
+        document.write(`De graad is: D`);
+      }
+      else if (getal>=50){
+        document.write(`De graad is: E`);
+      }
+      else {
+        document.write(`De graad is: F`)
+      }
+    </script>
+
+
+
+  </body>
+</html>
